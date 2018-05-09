@@ -1,0 +1,44 @@
+{
+  "name": "unicode-string-width",
+  "version": "0.0.1",
+  "description": "Get the visual width of a unicode string - the number of columns required to display it",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard | snazzy",
+    "lint-ci": "standard",
+    "test": "jest --env=node --coverage",
+    "preversion": "npm run lint",
+    "postversion": "git push && git push --tags"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run lint"
+    }
+  },
+  "keywords": [
+    "unicode",
+    "string",
+    "width"
+  ],
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "author": "Andrzej Lichnerowicz <andrzej@lichnerowicz.pl>",
+  "license": "Unlicense",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unjello/unicode-string-width"
+  },
+  "bugs": {
+    "url": "https://github.com/unjello/unicode-string-width/issues"
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "jest": "^22.4.3",
+    "snazzy": "^7.1.1",
+    "standard": "^11.0.1"
+  }
+}
