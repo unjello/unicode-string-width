@@ -1,3 +1,5 @@
+dependencies:
+  ansi-regex: 3.0.0
 devDependencies:
   husky: 0.14.3
   jest: 22.4.3
@@ -94,7 +96,6 @@ packages:
     resolution:
       integrity: sha1-w7M6te42DYbg5ijwRorn7yfWVN8=
   /ansi-regex/3.0.0:
-    dev: true
     engines:
       node: '>=4'
     resolution:
@@ -4419,6 +4420,7 @@ registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 5
 shrinkwrapVersion: 3
 specifiers:
+  ansi-regex: ^3.0.0
   husky: ^0.14.3
   jest: ^22.4.3
   snazzy: ^7.1.1
