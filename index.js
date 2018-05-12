@@ -1,3 +1,5 @@
 module.exports = s => {
-  return 0
+  if (!s || s.length === 0) return 0;
+  
+  return s.length
 }
