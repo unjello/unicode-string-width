@@ -1,5 +1,6 @@
 dependencies:
   ansi-regex: 3.0.0
+  is-fullwidth-code-point: 2.0.0
 devDependencies:
   husky: 0.14.3
   jest: 22.4.3
@@ -1983,7 +1984,6 @@ packages:
     resolution:
       integrity: sha1-754xOG8DGn8NZDr4L95QxFfvAMs=
   /is-fullwidth-code-point/2.0.0:
-    dev: true
     engines:
       node: '>=4'
     resolution:
@@ -4422,6 +4422,7 @@ shrinkwrapVersion: 3
 specifiers:
   ansi-regex: ^3.0.0
   husky: ^0.14.3
+  is-fullwidth-code-point: ^2.0.0
   jest: ^22.4.3
   snazzy: ^7.1.1
   standard: ^11.0.1

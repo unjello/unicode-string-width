@@ -5,7 +5,8 @@ describe('unicode', () => {
     '\u0100': 1,
     '\u1E9B\u1E6A': 2,
     'אבגדהוזחטל': 10,
-    'ဤဥဩဪါ': 5
+    'ဤဥဩဪါ': 5,
+    'math symbols: 𝓐𝓑': 16
   }
   Object.keys(text).forEach(e => {
     test(`properly calculates width of regular text >${e}`, () => {

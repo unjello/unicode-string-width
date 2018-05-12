@@ -42,6 +42,7 @@
     "standard": "^11.0.1"
   },
   "dependencies": {
-    "ansi-regex": "^3.0.0"
+    "ansi-regex": "^3.0.0",
+    "is-fullwidth-code-point": "^2.0.0"
   }
 }
