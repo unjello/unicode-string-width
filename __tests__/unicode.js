@@ -23,6 +23,16 @@ describe('unicode', () => {
       expect(unicode_string_width(e)).toEqual(text[e])
    }) 
   })
+
+  const tiles = {
+    '🀠🀡🀦': 3,
+    'ace of spades 🂡': 15
+  }
+  Object.keys(tiles).forEach(e => {
+    test(`properly calculates width of emojis >${e}`, () => {
+      expect(unicode_string_width(e)).toEqual(tiles[e])
+   }) 
+  })
 })
 
 /* 
