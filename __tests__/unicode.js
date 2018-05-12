@@ -18,9 +18,9 @@ describe('unicode', () => {
     '🙌🙋😱': 3,
     'text with emojis 😂😂😂': 20
   }
-  Object.keys(text).forEach(e => {
+  Object.keys(emoji).forEach(e => {
     test(`properly calculates width of emojis >${e}`, () => {
-      expect(unicode_string_width(e)).toEqual(text[e])
+      expect(unicode_string_width(e)).toEqual(emoji[e])
    }) 
   })
 
@@ -29,7 +29,7 @@ describe('unicode', () => {
     'ace of spades 🂡': 15
   }
   Object.keys(tiles).forEach(e => {
-    test(`properly calculates width of emojis >${e}`, () => {
+    test(`properly calculates width of tiles >${e}`, () => {
       expect(unicode_string_width(e)).toEqual(tiles[e])
    }) 
   })
