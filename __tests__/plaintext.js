@@ -17,4 +17,11 @@ describe('plaintext', () => {
 
     Object.keys(data).forEach(e => expect(unicodeStringWidth(e)).toEqual(data[e]))
   })
+
+  test('ignores control characters', () => {
+    [
+      '\u0010\u001f',
+      '\u007f\u0098\u009f'
+    ].forEach(e => expect(unicodeStringWidth(e)).toEqual(0))
+  })
 })
