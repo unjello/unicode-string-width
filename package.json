@@ -1,6 +1,6 @@
 {
   "name": "unicode-string-width",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Get the visual width of a unicode string - the number of columns required to display it",
   "main": "index.js",
   "scripts": {
