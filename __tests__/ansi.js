@@ -5,9 +5,7 @@ describe('ansi codes', () => {
     [
       '\x1b[31;1;4m\x1b[0m',
       '\x1b[38;2;255;82;197;48;2;155;106;0m'
-    ].forEach(s => {
-      expect(unicodeStringWidth(s)).toEqual(0)
-    })
+    ].forEach(s => expect(unicodeStringWidth(s)).toEqual(0))
   })
 
   test('properly calculates width of text without ansi codes', () => {

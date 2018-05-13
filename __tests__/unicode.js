@@ -9,9 +9,7 @@ describe('unicode', () => {
     'math symbols: 𝓐𝓑': 16
   }
   Object.keys(text).forEach(e => {
-    test(`properly calculates width of regular text >${e}`, () => {
-      expect(unicodeStringWidth(e)).toEqual(text[e])
-    })
+    test(`properly calculates width of regular text >${e}`, () => expect(unicodeStringWidth(e)).toEqual(text[e]))
   })
 
   const emoji = {
@@ -19,9 +17,7 @@ describe('unicode', () => {
     'text with emojis 😂😂😂': 20
   }
   Object.keys(emoji).forEach(e => {
-    test(`properly calculates width of emojis >${e}`, () => {
-      expect(unicodeStringWidth(e)).toEqual(emoji[e])
-    })
+    test(`properly calculates width of emojis >${e}`, () => expect(unicodeStringWidth(e)).toEqual(emoji[e]))
   })
 
   const tiles = {
@@ -29,8 +25,6 @@ describe('unicode', () => {
     'ace of spades 🂡': 15
   }
   Object.keys(tiles).forEach(e => {
-    test(`properly calculates width of tiles >${e}`, () => {
-      expect(unicodeStringWidth(e)).toEqual(tiles[e])
-    })
+    test(`properly calculates width of tiles >${e}`, () => expect(unicodeStringWidth(e)).toEqual(tiles[e]))
   })
 })
