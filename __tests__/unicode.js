@@ -13,6 +13,7 @@ describe('unicode', () => {
   })
 
   const fullWidth = {
+    '古': 2,
     '古池や': 6,
     'あいうabc': 9,
     'ノード.js': 9
