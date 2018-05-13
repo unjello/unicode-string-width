@@ -1,9 +1,9 @@
-const unicode_string_width = require('../index')
+const unicodeStringWidth = require('../index')
 
 describe('plaintext', () => {
   test('returns zero for empty string', () => {
     [undefined, '', null].forEach(s => {
-      expect(unicode_string_width(s)).toEqual(0)
+      expect(unicodeStringWidth(s)).toEqual(0)
     })
   })
 
@@ -12,9 +12,9 @@ describe('plaintext', () => {
       'a': 1,
       'test': 4,
       'W1d7h': 5,
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.':   56
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.': 56
     }
 
-    Object.keys(data).forEach(e => expect(unicode_string_width(e)).toEqual(data[e]))
+    Object.keys(data).forEach(e => expect(unicodeStringWidth(e)).toEqual(data[e]))
   })
 })

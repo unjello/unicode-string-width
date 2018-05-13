@@ -4,8 +4,7 @@ const isFullwidthCodePoint = require('is-fullwidth-code-point')
 const isVariationSelector = c => c >= 0xfe00 && c <= 0xfe0f
 
 module.exports = s => {
-  if (!s || s.length === 0) return 0;
-  
+  if (!s || s.length === 0) return 0
   s = s.replace(ansiRegex, '')
 
   let count = 0
@@ -18,7 +17,7 @@ module.exports = s => {
     // easily identified and shown in OSX and iOS
     if (isVariationSelector(code)) continue
 
-    count += isFullwidthCodePoint(code) ? 2 : 1;
+    count += isFullwidthCodePoint(code) ? 2 : 1
   }
 
   return count

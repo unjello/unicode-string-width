@@ -1,4 +1,4 @@
-const unicode_string_width = require('../index')
+const unicodeStringWidth = require('../index')
 
 describe('unicode', () => {
   const text = {
@@ -10,8 +10,8 @@ describe('unicode', () => {
   }
   Object.keys(text).forEach(e => {
     test(`properly calculates width of regular text >${e}`, () => {
-      expect(unicode_string_width(e)).toEqual(text[e])
-   }) 
+      expect(unicodeStringWidth(e)).toEqual(text[e])
+    })
   })
 
   const emoji = {
@@ -20,8 +20,8 @@ describe('unicode', () => {
   }
   Object.keys(emoji).forEach(e => {
     test(`properly calculates width of emojis >${e}`, () => {
-      expect(unicode_string_width(e)).toEqual(emoji[e])
-   }) 
+      expect(unicodeStringWidth(e)).toEqual(emoji[e])
+    })
   })
 
   const tiles = {
@@ -30,7 +30,7 @@ describe('unicode', () => {
   }
   Object.keys(tiles).forEach(e => {
     test(`properly calculates width of tiles >${e}`, () => {
-      expect(unicode_string_width(e)).toEqual(tiles[e])
-   }) 
+      expect(unicodeStringWidth(e)).toEqual(tiles[e])
+    })
   })
 })
