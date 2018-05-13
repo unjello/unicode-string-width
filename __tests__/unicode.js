@@ -12,6 +12,15 @@ describe('unicode', () => {
     test(`properly calculates width of regular text >${e}`, () => expect(unicodeStringWidth(e)).toEqual(text[e]))
   })
 
+  const fullWidth = {
+    '古池や': 6,
+    'あいうabc': 9,
+    'ノード.js': 9
+  }
+  Object.keys(fullWidth).forEach(e => {
+    test(`properly calculates width of full-width text >${e}`, () => expect(unicodeStringWidth(e)).toEqual(fullWidth[e]))
+  })
+
   const emoji = {
     '🙌🙋😱': 3,
     'text with emojis 😂😂😂': 20
