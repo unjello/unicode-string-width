@@ -5,7 +5,6 @@ const isVariationSelector = c => c >= 0xfe00 && c <= 0xfe0f
 const isCombiningCharacter = c => c >= 0x300 && c <= 0x36f
 const isAsciiControlCharacter = c => c <= 0x1f || (c >= 0x7f && c <= 0x9f)
 
-
 module.exports = s => {
   if (!s || typeof s !== 'string' || s.length === 0) return 0
   s = s.replace(ansiRegex, '')
