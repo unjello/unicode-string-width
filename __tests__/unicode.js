@@ -23,8 +23,8 @@ describe('unicode', () => {
   })
 
   const emoji = {
-    '🙌🙋😱': 3,
-    'text with emojis 😂😂😂': 20
+    '🙌🙋😱': 6,
+    'text with emojis 😂😂😂': 23
   }
   Object.keys(emoji).forEach(e => {
     test(`properly calculates width of emojis >${e}`, () => expect(unicodeStringWidth(e)).toEqual(emoji[e]))

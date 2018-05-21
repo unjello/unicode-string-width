@@ -1,12 +1,12 @@
 {
   "name": "unicode-string-width",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Get the visual width of a unicode string - the number of columns required to display it",
   "main": "index.js",
   "scripts": {
     "lint": "standard | snazzy",
     "lint-ci": "standard",
-    "test": "jest --env=node --coverage",
+    "test": "jest --env=node --coverage --verbose",
     "preversion": "npm run lint",
     "postversion": "git push && git push --tags"
   },

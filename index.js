@@ -26,7 +26,6 @@ module.exports = s => {
     const code = graphemes[i].codePointAt(0)
 
     if (isVariationSelector(code)) {
-      count += 2
       continue
     }
 
